@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import OneHotEncoder
 from django.shortcuts import redirect
+import tensorflow.keras as keras
 from tensorflow import keras
 from .forms import DNASequenceForm
 from .models import DNASequence
