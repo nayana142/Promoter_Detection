@@ -1,0 +1,25 @@
+<!-- input.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input DNA Sequence</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+<style>
+    h1 {
+        text-align: center;
+            
+        color: rgb(245, 119, 23); /* Set color of the title to green */
+        }
+</style>
+</head>
+<body class="input-page">
+    <h1> DNA Sequence </h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

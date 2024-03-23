@@ -1,0 +1,29 @@
+<!-- index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promoter Gene Predictor</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>  
+       h1 {
+            text-align: center;
+            
+            color: rgb(1, 35, 73); /* Set color of the title to green */
+        }
+        .content {
+            text-align: center;
+        }
+        .center-top {
+            margin-bottom: auto; /* Push content to the top */
+        }
+
+    </style>
+</head >
+<body >
+    <h1>ECO-PromoGuard : DNA Promoter Detection</h1>
+    <p>Discover E. coli infection susceptibility in your DNA sequence by analyzing its Promoter potential</p>
+    <a href="{% url 'input' %}">......Input DNA Sequence......</a>
+</body>
+</html>

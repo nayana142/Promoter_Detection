@@ -1,0 +1,62 @@
+<!-- result.html  -->
+{% load static %}
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet"  href="{% static 'styles.css' %}">
+
+</head>
+<body class="output-page">
+    <h1>Result</h1>
+    <p>Input DNA Sequence: {{ sequence.sequence }}</p>
+    <h2>Is It Promoter Gene ?: {% if sequence.affected_by_ecoli %}Yes{% else %}No{% endif %}</h2>
+    <a href="{% url 'index' %}">.... End of the result ....</a>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet"  href="{% static 'styles.css' %}">
+    <style>
+        h1 {
+        text-align: center;
+            
+        color: rgb(197, 87, 3); /* Set color of the title to green */
+        }
+        h2 {
+        text-align: center;
+            
+        color: rgb(250, 27, 86); /* Set color of the title to green */
+        }
+        a {
+        color: #4480e7; /* set text color */
+        margin-top: 10 px;
+        text-decoration: none;
+    }
+    button:hover {
+        background-color: #b09900; /* set hover background color */
+    }
+    </style>
+</head>
+
+
+<body class="output-page">
+    <h1>Result</h1>
+    <!-- Display current input result -->
+    <h3>Input DNA Sequence: 
+        {{ current_sequence.sequence }}</h3>
+    <h2>Is It Promoter Gene ? :  {% if current_sequence.affected_by_ecoli %} Yes{% else %}No{% endif %}</h2>
+
+    <!-- Link back to index page -->
+    <button>
+        <a href="{% url 'previous_results' %}">.... Previous Results ....</a>
+    </button>
+    
+</body>
+</html>

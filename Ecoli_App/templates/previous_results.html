@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Results</title>
+    
+    <style>
+        /* Center the table */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(193, 219, 244);
+            color: rgb(17, 13, 16); /* Set text color to white */
+            text-align: center; /* Center align text */
+        }
+        
+        h1 {
+            color: rgb(0, 42, 104); /* Set color of the title to green */
+            text-decoration: underline;
+        }
+        table {
+            margin: 0 auto; /* Set left and right margins to auto to center */
+        }
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            color: rgb(241, 237, 237); /* Set text color to white */
+        }
+        th {
+            text-align: center;
+             /* Dark background color */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="previosedata-page">
+    <h1>Previous Results</h1>
+    <!-- Display previous input results as DataFrame -->
+    {{ previous_sequences.to_html|safe }}
+
+    <!-- Link back to index page -->
+    <button>
+         <a href="{% url 'index' %}"> Back to Home </a>
+    </button>
+</body>
+</html>
