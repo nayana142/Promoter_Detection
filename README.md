@@ -77,7 +77,8 @@ Promoter Detection for Ecoli Prediction
 
 
 ## Tools Used
-  ![image](https://github.com/nayana142/Promoter_Detection/assets/120770261/9058d7ea-b47d-4de8-9810-cc90750f31e6)
+ ![Screenshot 2024-03-23 142548](https://github.com/nayana142/Promoter_Detection/assets/120770261/af12d372-9976-47e2-b765-fc655a06b26f)
+
   
 
 
